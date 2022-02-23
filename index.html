@@ -72,21 +72,21 @@ input[type=submit]:hover {
 <body>    
 <h2>SURVEY FORM</h2>    
 <div class="container">    
-  <form>    
+  <form method="POST" action="https://script.google.com/macros/s/AKfycbykGhTeaSCEGepqH7jWGzl6tO5dyE2bSdSm4yviknb3RXDpm7G4RzV0RZAEknYY2eqF/exec" action="<my-app-script-endpoint>" method="post" id="survey-form">    
     <div class="row">    
       <div class="col-25">    
-        <label for="fname">Name</label>    
+        <label for="name">Name</label>    
       </div>    
       <div class="col-75">    
-        <input type="text" id="fname" name="name" placeholder="Your name..">    
+        <input type="text" id="name" name="name" required placeholder="Your name..">    
       </div>    
     </div>    
     <div class="row">    
       <div class="col-25">    
-        <label for="mnumber">Mobile Number (Optional)</label>    
+        <label for="mobilenumber">Mobile Number (Optional)</label>    
       </div>    
       <div class="col-75">    
-        <input type="text" id="mnumber" name="mobilenumber" placeholder="Your Mobile Number..">    
+        <input type="text" id="mobilenumber" name="mobilenumber" placeholder="Your Mobile Number..">    
       </div>    
     </div>    
     <div class="row">    
@@ -94,7 +94,7 @@ input[type=submit]:hover {
           <label for="email">Mail Id</label>    
         </div>    
         <div class="col-75">    
-          <input type="email" id="email" name="mailid" placeholder="Your mail id..">    
+          <input type="email" id="email" name="mailid" required placeholder="Your mail id..">    
         </div>    
       </div>    
     <div class="row">    
@@ -102,7 +102,7 @@ input[type=submit]:hover {
         <label for="your_opinion">Your Opinion</label>    
       </div>    
       <div class="col-75">    
-        <textarea id="subject" name="subject" placeholder="Please write your opinion about eBikes, like :- any features that you would like to add or remove, or, any Pros and Cons that you feel like sharing with me!!!" style="height:200px"></textarea>    
+        <textarea id="subject" name="subject" required placeholder="Please write your opinion about eBikes, like :- any features that you would like to add or remove, or, any Pros and Cons that you feel like sharing with me!!!" style="height:200px"></textarea>    
       </div>    
     </div>    
     <div class="row">    

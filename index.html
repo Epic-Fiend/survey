@@ -107,7 +107,24 @@ input[type=submit]:hover {
     </div>    
     <div class="row">    
       <input type="submit" value="Submit">    
-    </div>    
+    </div> 
+<script> 
+window.addEventListener("load", function() {
+  const form = document.getElementById('survey-form');
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const action = e.target.action;
+    fetch(action, {
+      method: 'POST',
+      body: data,
+    })
+    .then(() => {
+      alert("Success!");
+    })
+  });
+});
+</script>  
   </form>    
 </div>    
     
